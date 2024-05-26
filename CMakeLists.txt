@@ -5,16 +5,16 @@ project(Banking)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(BankAccount ${CMAKE_CURRENT_SOURCE_DIR}/BankAccount.cpp)
-add_library(ConceptualExample01 ${CMAKE_CURRENT_SOURCE_DIR}/ConceptualExample01.cpp)
-add_library(ConceptualExample02 ${CMAKE_CURRENT_SOURCE_DIR}/ConceptualExample02.cpp)
+option(BUILD_TESTS "Build tests" OFF)
 
-add_executable(Shapes ${CMAKE_CURRENT_SOURCE_DIR}/Program.cpp)
+file(GLOB SOURCES "BankAccount.cpp" , "ConceptualExample01.cpp" , "ConceptualExample02.cpp" , "Program.cpp")
+add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_compile_definitions(ConceptualExample02 PRIVATE
-    $<$<PLATFORM_ID:Windows>:USE_CTIME_S>
-    $<$<PLATFORM_ID:Linux>:USE_CTIME_R>
-    $<$<PLATFORM_ID:Darwin>:USE_CTIME_R>
-)
-
-target_link_libraries(Shapes BankAccount ConceptualExample01 ConceptualExample02)
+if(BUILD_TESTS)
+  enable_testing()
+  add_subdirectory(third-party/gtest)
+  file(GLOB TEST_SOURCES "tests.cpp")
+  add_executable(check ${TEST_SOURCES})
+  target_link_libraries(check gtest_main)
+  add_test(NAME check COMMAND check)
+endif()

@@ -63,10 +63,7 @@ CMAKE_BINARY_DIR = /Users/mihailerosenko/Desktop/RK2/_build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/BankAccount.dir/all
-all: CMakeFiles/ConceptualExample01.dir/all
-all: CMakeFiles/ConceptualExample02.dir/all
-all: CMakeFiles/Shapes.dir/all
+all: CMakeFiles/Banking.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,117 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/BankAccount.dir/clean
-clean: CMakeFiles/ConceptualExample01.dir/clean
-clean: CMakeFiles/ConceptualExample02.dir/clean
-clean: CMakeFiles/Shapes.dir/clean
+clean: CMakeFiles/Banking.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BankAccount.dir
+# Target rules for target CMakeFiles/Banking.dir
 
 # All Build rule for target.
-CMakeFiles/BankAccount.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles --progress-num=1,2 "Built target BankAccount"
-.PHONY : CMakeFiles/BankAccount.dir/all
+CMakeFiles/Banking.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles --progress-num=1,2,3,4,5 "Built target Banking"
+.PHONY : CMakeFiles/Banking.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BankAccount.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BankAccount.dir/all
+CMakeFiles/Banking.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Banking.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 0
-.PHONY : CMakeFiles/BankAccount.dir/rule
+.PHONY : CMakeFiles/Banking.dir/rule
 
 # Convenience name for target.
-BankAccount: CMakeFiles/BankAccount.dir/rule
-.PHONY : BankAccount
+Banking: CMakeFiles/Banking.dir/rule
+.PHONY : Banking
 
 # clean rule for target.
-CMakeFiles/BankAccount.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/clean
-.PHONY : CMakeFiles/BankAccount.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ConceptualExample01.dir
-
-# All Build rule for target.
-CMakeFiles/ConceptualExample01.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles --progress-num=3,4 "Built target ConceptualExample01"
-.PHONY : CMakeFiles/ConceptualExample01.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ConceptualExample01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ConceptualExample01.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 0
-.PHONY : CMakeFiles/ConceptualExample01.dir/rule
-
-# Convenience name for target.
-ConceptualExample01: CMakeFiles/ConceptualExample01.dir/rule
-.PHONY : ConceptualExample01
-
-# clean rule for target.
-CMakeFiles/ConceptualExample01.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/clean
-.PHONY : CMakeFiles/ConceptualExample01.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ConceptualExample02.dir
-
-# All Build rule for target.
-CMakeFiles/ConceptualExample02.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles --progress-num=5,6 "Built target ConceptualExample02"
-.PHONY : CMakeFiles/ConceptualExample02.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ConceptualExample02.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ConceptualExample02.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 0
-.PHONY : CMakeFiles/ConceptualExample02.dir/rule
-
-# Convenience name for target.
-ConceptualExample02: CMakeFiles/ConceptualExample02.dir/rule
-.PHONY : ConceptualExample02
-
-# clean rule for target.
-CMakeFiles/ConceptualExample02.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/clean
-.PHONY : CMakeFiles/ConceptualExample02.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Shapes.dir
-
-# All Build rule for target.
-CMakeFiles/Shapes.dir/all: CMakeFiles/BankAccount.dir/all
-CMakeFiles/Shapes.dir/all: CMakeFiles/ConceptualExample01.dir/all
-CMakeFiles/Shapes.dir/all: CMakeFiles/ConceptualExample02.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles --progress-num=7,8 "Built target Shapes"
-.PHONY : CMakeFiles/Shapes.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Shapes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Shapes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles 0
-.PHONY : CMakeFiles/Shapes.dir/rule
-
-# Convenience name for target.
-Shapes: CMakeFiles/Shapes.dir/rule
-.PHONY : Shapes
-
-# clean rule for target.
-CMakeFiles/Shapes.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/clean
-.PHONY : CMakeFiles/Shapes.dir/clean
+CMakeFiles/Banking.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/clean
+.PHONY : CMakeFiles/Banking.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

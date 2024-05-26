@@ -117,63 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BankAccount
+# Target rules for targets named Banking
 
 # Build rule for target.
-BankAccount: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BankAccount
-.PHONY : BankAccount
+Banking: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Banking
+.PHONY : Banking
 
 # fast build rule for target.
-BankAccount/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/build
-.PHONY : BankAccount/fast
-
-#=============================================================================
-# Target rules for targets named ConceptualExample01
-
-# Build rule for target.
-ConceptualExample01: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConceptualExample01
-.PHONY : ConceptualExample01
-
-# fast build rule for target.
-ConceptualExample01/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/build
-.PHONY : ConceptualExample01/fast
-
-#=============================================================================
-# Target rules for targets named ConceptualExample02
-
-# Build rule for target.
-ConceptualExample02: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConceptualExample02
-.PHONY : ConceptualExample02
-
-# fast build rule for target.
-ConceptualExample02/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/build
-.PHONY : ConceptualExample02/fast
-
-#=============================================================================
-# Target rules for targets named Shapes
-
-# Build rule for target.
-Shapes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Shapes
-.PHONY : Shapes
-
-# fast build rule for target.
-Shapes/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/build
-.PHONY : Shapes/fast
+Banking/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/build
+.PHONY : Banking/fast
 
 BankAccount.o: BankAccount.cpp.o
 .PHONY : BankAccount.o
 
 # target to build an object file
 BankAccount.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/BankAccount.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/BankAccount.cpp.o
 .PHONY : BankAccount.cpp.o
 
 BankAccount.i: BankAccount.cpp.i
@@ -181,7 +142,7 @@ BankAccount.i: BankAccount.cpp.i
 
 # target to preprocess a source file
 BankAccount.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/BankAccount.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/BankAccount.cpp.i
 .PHONY : BankAccount.cpp.i
 
 BankAccount.s: BankAccount.cpp.s
@@ -189,7 +150,7 @@ BankAccount.s: BankAccount.cpp.s
 
 # target to generate assembly for a file
 BankAccount.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BankAccount.dir/build.make CMakeFiles/BankAccount.dir/BankAccount.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/BankAccount.cpp.s
 .PHONY : BankAccount.cpp.s
 
 ConceptualExample01.o: ConceptualExample01.cpp.o
@@ -197,7 +158,7 @@ ConceptualExample01.o: ConceptualExample01.cpp.o
 
 # target to build an object file
 ConceptualExample01.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/ConceptualExample01.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/ConceptualExample01.cpp.o
 .PHONY : ConceptualExample01.cpp.o
 
 ConceptualExample01.i: ConceptualExample01.cpp.i
@@ -205,7 +166,7 @@ ConceptualExample01.i: ConceptualExample01.cpp.i
 
 # target to preprocess a source file
 ConceptualExample01.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/ConceptualExample01.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/ConceptualExample01.cpp.i
 .PHONY : ConceptualExample01.cpp.i
 
 ConceptualExample01.s: ConceptualExample01.cpp.s
@@ -213,7 +174,7 @@ ConceptualExample01.s: ConceptualExample01.cpp.s
 
 # target to generate assembly for a file
 ConceptualExample01.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample01.dir/build.make CMakeFiles/ConceptualExample01.dir/ConceptualExample01.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/ConceptualExample01.cpp.s
 .PHONY : ConceptualExample01.cpp.s
 
 ConceptualExample02.o: ConceptualExample02.cpp.o
@@ -221,7 +182,7 @@ ConceptualExample02.o: ConceptualExample02.cpp.o
 
 # target to build an object file
 ConceptualExample02.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/ConceptualExample02.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/ConceptualExample02.cpp.o
 .PHONY : ConceptualExample02.cpp.o
 
 ConceptualExample02.i: ConceptualExample02.cpp.i
@@ -229,7 +190,7 @@ ConceptualExample02.i: ConceptualExample02.cpp.i
 
 # target to preprocess a source file
 ConceptualExample02.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/ConceptualExample02.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/ConceptualExample02.cpp.i
 .PHONY : ConceptualExample02.cpp.i
 
 ConceptualExample02.s: ConceptualExample02.cpp.s
@@ -237,7 +198,7 @@ ConceptualExample02.s: ConceptualExample02.cpp.s
 
 # target to generate assembly for a file
 ConceptualExample02.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ConceptualExample02.dir/build.make CMakeFiles/ConceptualExample02.dir/ConceptualExample02.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/ConceptualExample02.cpp.s
 .PHONY : ConceptualExample02.cpp.s
 
 Program.o: Program.cpp.o
@@ -245,7 +206,7 @@ Program.o: Program.cpp.o
 
 # target to build an object file
 Program.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/Program.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/Program.cpp.o
 .PHONY : Program.cpp.o
 
 Program.i: Program.cpp.i
@@ -253,7 +214,7 @@ Program.i: Program.cpp.i
 
 # target to preprocess a source file
 Program.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/Program.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/Program.cpp.i
 .PHONY : Program.cpp.i
 
 Program.s: Program.cpp.s
@@ -261,7 +222,7 @@ Program.s: Program.cpp.s
 
 # target to generate assembly for a file
 Program.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes.dir/build.make CMakeFiles/Shapes.dir/Program.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Banking.dir/build.make CMakeFiles/Banking.dir/Program.cpp.s
 .PHONY : Program.cpp.s
 
 # Help Target
@@ -272,10 +233,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BankAccount"
-	@echo "... ConceptualExample01"
-	@echo "... ConceptualExample02"
-	@echo "... Shapes"
+	@echo "... Banking"
 	@echo "... BankAccount.o"
 	@echo "... BankAccount.i"
 	@echo "... BankAccount.s"
