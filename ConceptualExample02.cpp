@@ -62,9 +62,15 @@ namespace ConceptualExample02 {
 
     private:
         std::string currentTimeToString() {
-            char str[32];
-            std::time_t now = std::time(0);
-            ctime_s(str, sizeof str, &now);
+            char str[26]; // ctime_r требует буфер размером не менее 26 байт
+            std::time_t now = std::time(nullptr);
+
+            #ifdef _WIN32
+                ctime_s(str, sizeof str, &now);
+            #else
+                ctime_r(&now, str);
+            #endif
+
             return std::string(str);
         }
     };
@@ -74,7 +80,7 @@ namespace ConceptualExample02 {
      * defines a method for saving the state inside a memento and another method for
      * restoring the state from it.
      */
-    class Originator 
+    class Originator
     {
     private:
         std::string m_state;  // originator's state
@@ -140,7 +146,7 @@ namespace ConceptualExample02 {
         std::shared_ptr<Originator> m_originator;
 
     public:
-        CareTaker(std::shared_ptr<Originator> originator) 
+        CareTaker(std::shared_ptr<Originator> originator)
             : m_originator{ originator } {}
 
         void backup() {
@@ -174,7 +180,7 @@ namespace ConceptualExample02 {
     };
 
     static void clientCode() {
-        std::shared_ptr<Originator> originator{ 
+        std::shared_ptr<Originator> originator{
             std::make_shared<Originator>("I'm the original state of this Originator")
         };
 
