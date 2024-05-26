@@ -18,3 +18,7 @@ if(BUILD_TESTS)
   target_link_libraries(check gtest_main)
   add_test(NAME check COMMAND check)
 endif()
+
+option(PACK "pack" OFF)
+
+include(CPack.cmake)

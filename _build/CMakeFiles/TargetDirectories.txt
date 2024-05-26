@@ -1,3 +1,5 @@
 /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles/Banking.dir
+/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles/package.dir
+/Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles/package_source.dir
 /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles/edit_cache.dir
 /Users/mihailerosenko/Desktop/RK2/_build/CMakeFiles/rebuild_cache.dir
